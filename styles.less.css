@@ -1,0 +1,241 @@
+/* 
+Variable declarations 
+*/
+@color: #4D926F;
+
+/* Site Title */
+@site_title_font-family:	Arial, Helvetica, sans-serif;
+@site_title_font-size: 		50px;
+@site_title_color:			#000000;
+
+/* Heading */
+@h1_color:	#000000;
+@h2_color:	#275201;
+@h3_color:	#567E8A;
+@h4_color:	#275201;
+@h5_color:	#000000;
+@h6_color:	#000000;
+
+/* Hyperlinks */
+
+@a_color:		#1553b9;
+@a_hover_color:	green;
+
+/* Paragraphs */
+
+@para_color:		#222;
+@para_font-family:	Arial, Helvetica, sans-serif;
+@para_font-size:	12px;
+@para_line-height:	normal;
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #000000;
+    text-align:center;
+    background-color:#e3cfae;
+    background-image: url(resources/bg.jpg);
+    background-repeat:repeat;
+    background-position:top left;
+    background-attachment:fixed;
+}
+
+div.ys_wrap{
+    margin:0 auto;
+    width: 980px;
+    text-align:left;
+    padding:0 0 40px 0;
+}
+
+div.ys_heading{
+    padding:58px 0 25px 0;
+}
+
+div.ys_heading h1{
+    margin:0;
+    padding:0;
+    font-size:50px;
+}
+
+div.ys_heading h1 a{
+    color:#000000;
+    text-decoration: none;
+}
+
+div.ys_menu {
+    width: 980px;
+    height: 42px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.5em;
+    text-transform: lowercase;
+}
+
+div.ys_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div.ys_menu li {
+    display: block;
+    float: left;
+}
+
+div.ys_menu a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    margin:0 10px 0 0;
+    padding:0 15px;
+    padding-bottom: 1.0em;
+    color:#000;
+}
+
+div.ys_menu ul li.selected a{
+    background:url(resources/menu-hover.png) center 26px no-repeat;
+    _behavior: url(resources/iepngfix.htc);
+}
+
+* html div.ys_menu ul li.selected a{
+    background:url(resources/menu-hover.gif) center 26px no-repeat;
+}
+
+div.ys_menu ul li a:hover {
+    background:url(resources/menu-hover.png) center 26px no-repeat;
+    _behavior: url(resources/iepngfix.htc);
+}
+
+* html div.ys_menu ul li a:hover {
+    background:url(resources/menu-hover.gif) center 26px no-repeat;
+}
+
+div.ys_menu_2 {
+    width: 980px;
+    margin: 0 auto 0 auto;
+    padding: 10px 0 0 0;
+    font-size: 1.5em;
+    text-transform: lowercase;
+}
+
+div.ys_menu_2 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div.ys_menu_2 li {
+    display: inline;
+}
+
+div.ys_menu_2 a {
+    display: inline-block;
+    text-decoration: none;
+    margin:0 10px 0 0;
+    padding:0 15px;
+    color:#000;
+    height:42px;
+    font-size:16px;
+}
+
+div.ys_menu_2 ul li.selected a{
+    background:url(resources/menu-hover.png) center 26px no-repeat;
+    _behavior: url(resources/iepngfix.htc);
+}
+
+* html div.ys_menu_2 ul li.selected a{
+    background:url(resources/menu-hover.gif) center 26px no-repeat;
+}
+
+div.ys_menu_2 ul li a:hover {
+    background:url(resources/menu-hover.png) center 26px no-repeat;
+    _behavior: url(resources/iepngfix.htc);
+}
+
+* html div.ys_menu_2 ul li a:hover {
+    background:url(resources/menu-hover.gif) center 26px no-repeat;
+}
+
+div#sys_banner {
+    height: 250px;
+    background: url("resources/banner.jpg") top left no-repeat;
+    border:1px solid #fff;
+}
+
+div.ys_fake_hr_top{
+    border-bottom:2px solid #fff;
+    margin-bottom:14px;
+    margin-top:-16px;
+}
+
+div.ys_bottom_shadow {
+    height: 6px;
+    font-size:0;
+    background: url(resources/bottom-shadow.png) top left no-repeat;
+    _behavior: url(resources/iepngfix.htc);
+}
+
+div.ys_fake_hr{
+    border-bottom:1px solid #fff;
+    height:9px;
+    font-size:0;
+    margin: 0 0 15px 0;
+}
+
+div.ys_content{
+    background:#fff;
+    padding:15px;
+}
+
+/* Variables - only edit these */
+
+body{
+    font-family:	@para_font-family;
+    font-size:		@para_font-size;
+    color:			@para_color;
+}
+
+p{
+    margin: 0;
+    padding: 5px 0;
+    line-height: @para_line-height;
+}
+
+
+a{
+    color:@a_color;
+    text-decoration:underline;
+}
+
+a:hover{
+    text-decoration:none;
+    color:@a_hover_color;
+}
+
+a img{border:none;}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 5px 0;
+    padding: 10px 0;
+}
+
+h1{font-size: 3.3em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+h4{font-size: 1.8em;}
+h5{font-size: .9em;}
+h6{font-size: .7em;}
+
+h1 a, h1 a:hover, h1{color:@h1_color;}
+h2 a, h2 a:hover, h2{color:@h2_color;}
+h3 a, h3 a:hover, h3{color:@h3_color;}
+h4 a, h4 a:hover, h4{color:@h4_color;}
+h5 a, h5 a:hover, h5{color:@h5_color;}
+h6 a, h6 a:hover, h6{color:@h6_color;}
